@@ -1,0 +1,16 @@
+@font-face {
+  font-family: Denim;
+  src: url(./Denim-Medium.ttf);
+}
+@font-face {
+  font-family: HelveticaThin;
+  src: url(./HelveticaNeueLTPro-BdCn.otf);
+}
+@font-face {
+  font-family: Helvetica;
+  src: url(./HelveticaNeueLTPro-Bd.otf);
+}
+@font-face {
+  font-family: Parnaso;
+  src: url(./Parnaso-MediumCondensed.woff);
+}

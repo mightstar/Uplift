@@ -1,0 +1,322 @@
+:root {
+  --green-primary: #009200;
+  --green-primary-dark: #007200;
+  --yellow-primary: #f9e7d2;
+  --text-primary: #2c2826;
+  --text-secondary: #e6f1bc;
+  --text-white-primary: #fff8ee;
+
+  --space-3: 3px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+
+  --item-width: 140px;
+}
+
+body {
+  margin: 0;
+}
+
+.app-container {
+  margin: var(--space-6);
+}
+
+.move-page-container {
+  margin-top: var(--space-12);
+  margin-left: var(--space-6);
+  margin-right: var(--space-6);
+}
+
+/* common styles */
+
+.button-green {
+  background-color: var(--green-primary);
+  color: var(--yellow-primary);
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.button-green:hover {
+  background-color: var(--green-primary-dark);
+}
+
+.button-yellow {
+  background-color: var(--yellow-primary);
+  color: var(--text-primary);
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.app-container .w-half {
+  width: 50%;
+}
+
+.app-container .w-full {
+  width: 100%;
+}
+
+/* for vertical centering helvetica-thin texts in button */
+.app-container .pt-16 {
+  padding-top: 16px !important;
+}
+.app-container .pt-14 {
+  padding-top: 12px !important;
+}
+.app-container .pt-14 {
+  padding-top: 12px !important;
+}
+.app-container .pt-8 {
+  padding-top: 8px !important;
+}
+
+/* font styles */
+
+.app-container .font-parnaso {
+  font-family: Parnaso;
+}
+
+.app-container .font-helvetica-thin {
+  font-family: HelveticaThin;
+}
+
+.app-container .font-helvetica-thin {
+  font-family: HelveticaThin;
+}
+
+/* top navigation style */
+.top-nav-bar {
+  background-color: var(--yellow-primary);
+  padding: var(--space-3);
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-10);
+}
+.top-nav-bar .nav-item-green {
+  width: 100%;
+  background-color: var(--green-primary);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
+  padding: var(--space-3) 0;
+}
+.top-nav-bar .nav-item-yellow {
+  width: 100%;
+  background-color: var(--yellow-primary);
+  color: var(--text-primary);
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
+  padding: var(--space-3) 0;
+}
+.top-nav-bar .nav-item-link {
+  width: 50%;
+}
+
+/* carousel styles */
+.home-carousel {
+  position: relative;
+}
+
+.home-carousel .home-carousel-container {
+  overflow: hidden;
+}
+.home-carousel .carousel-container {
+  position: relative;
+  left: 0;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: 1s;
+}
+
+.home-carousel .carousel-item {
+  min-width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.home-carousel .carousel-image {
+  height: 300px;
+  transform: scale(1.1);
+  object-fit: cover;
+}
+
+.home-carousel .text-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* Black background with 80% opacity */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-carousel .carousel-heading {
+  font-size: 3rem;
+  color: var(--text-white-primary);
+  font-family: Parnaso;
+  text-align: center;
+}
+
+.home-carousel .carousel-button {
+  margin-top: var(--space-16);
+  padding: var(--space-8) var(--space-16);
+  font-size: 0.9rem;
+  font-family: HelveticaThin;
+}
+
+.home-carousel .carousel-indicator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 15;
+
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.home-carousel .indicator-item {
+  width: 4px;
+  height: 4px;
+  border: 1px solid #000000;
+  border-radius: 100%;
+}
+.home-carousel .indicator-item.active {
+  background-color: #00000066;
+}
+
+/* plan options styles */
+
+.plans-container {
+  display: flex;
+  gap: var(--space-8);
+  margin-top: var(--space-8);
+}
+
+.plan-button {
+  padding: var(--space-8) 0;
+  font-family: HelveticaThin;
+}
+
+.just-dropped-container {
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--text-primary);
+  margin: 32px 0;
+  font-family: Parnaso;
+}
+
+/* approaches container styles */
+
+.approaches-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: var(--space-8);
+  width: 100%;
+  overflow: auto;
+  padding-bottom: var(--space-8);
+}
+
+.approaches-container .approach-item {
+  border-radius: 30px;
+  position: relative;
+  width: var(--item-width);
+  min-width: var(--item-width);
+  height: var(--item-width);
+}
+.approaches-container .approach-image-container {
+  height: 85px;
+}
+.approaches-container .approach-image {
+  object-fit: cover;
+  border-radius: 24px 24px 0 0;
+}
+
+.approaches-container .approach-text-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 85;
+  bottom: 0;
+
+  background-color: var(--text-white-primary);
+  color: var(--text-primary);
+  padding: var(--space-12);
+  border-radius: 0 0 24px 24px;
+  font-size: 0.8rem;
+  font-family: Helvetica;
+}
+
+/* move page styles */
+
+.move-page-container .move-items-container {
+  margin: var(--space-10) 0;
+  gap: var(--space-10);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.move-page-container .move-item {
+  position: relative;
+  width: calc(50% - 5px);
+}
+
+.move-page-container .move-item:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.move-page-container .move-item-image-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .move-page-container .move-item {
+    width: calc(33.3% - 7.5px);
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .move-page-container .move-item {
+    width: calc(25% - 10px);
+  }
+}
+
+.move-page-container .move-item-image {
+  object-fit: cover;
+  position: relative; /* Make sure the parent is positioned */
+}
+
+.move-page-container .move-item-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Black background with 80% opacity */
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-family: Parnaso;
+  color: var(--text-white-primary);
+}
